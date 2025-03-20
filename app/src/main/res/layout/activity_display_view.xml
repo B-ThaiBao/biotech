@@ -21,11 +21,14 @@
         android:background="#195eb6">
 
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="match_parent"
+            android:id="@+id/go_back_button"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
             android:src="@drawable/ic_double_arrow_left"
-            android:padding="18dp"
-            />
+            android:layout_centerVertical="true"
+            android:layout_alignTop="@+id/footer_title"
+            android:layout_alignBottom="@+id/footer_title"
+            android:padding="5dp" />
 
         <TextView
             android:id="@+id/footer_title"
