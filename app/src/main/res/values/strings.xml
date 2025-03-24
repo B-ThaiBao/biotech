@@ -2,4 +2,7 @@
     <string name="app_name">biotech</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="vie_practice">THỰC HÀNH</string>
+    <string name="main_screen">MÀN HÌNH CHÍNH</string>
+    <string name="end_practice">KẾT THÚC</string>
 </resources>

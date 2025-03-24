@@ -32,13 +32,13 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         view.findViewById(R.id.find_space_layout).setOnClickListener(v -> {
-            FooterTitle.pushBack("MÀN HÌNH CHÍNH");
+            FooterTitle.pushBack(getString(R.string.main_screen));
             MainFragment mainFragment = MainFragment.newInstance();
             getParentFragmentManager().beginTransaction().replace(R.id.fragment_container, mainFragment).addToBackStack(null).commit();
         });
 
         view.findViewById(R.id.find_img_layout).setOnClickListener(v -> {
-            FooterTitle.pushBack("MÀN HÌNH CHÍNH");
+            FooterTitle.pushBack(getString(R.string.main_screen));
             MainFragment mainFragment = MainFragment.newInstance();
             getParentFragmentManager().beginTransaction().replace(R.id.fragment_container, mainFragment).addToBackStack(null).commit();
         });
