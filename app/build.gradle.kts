@@ -49,4 +49,12 @@ dependencies {
 
     // Camerax View class
     implementation("androidx.camera:camera-view:${cameraxVersion}")
+
+    // Gson: https://github.com/google/gson
+    val gsonVersion = "2.12.1"
+    implementation("com.google.code.gson:gson:${gsonVersion}")
+
+    // https://developer.android.com/jetpack/androidx/releases/recyclerview
+    val recyclerViewVersion = "1.2.1"
+    implementation("androidx.recyclerview:recyclerview:${recyclerViewVersion}")
 }

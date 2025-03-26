@@ -7,15 +7,22 @@
     android:background="@color/grey"
     tools:context=".MainFragment">
 
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true">
 
         <HorizontalScrollView
+            android:id="@+id/scroll_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/scroll_bottom">
+            android:layout_alignParentTop="true">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -57,14 +64,16 @@
 
         </HorizontalScrollView>
 
-        <HorizontalScrollView
-            android:id="@+id/scroll_bottom"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:visibility="gone">
-
-        </HorizontalScrollView>
+            android:background="#1AFFFFFF"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:layout_below="@+id/scroll_view"
+            android:overScrollMode="never"/>
 
     </RelativeLayout>
 

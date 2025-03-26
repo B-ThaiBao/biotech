@@ -1,0 +1,32 @@
+[
+    {
+        "id": "thuoc_tru_sau",
+        "title": "Thuốc trừ sâu",
+        "img_src": "thuoc_tru_sau.png"
+    },
+    {
+        "id": "thuoc_diet_co",
+        "title": "Thuốc diệt cỏ",
+        "img_src": "thuoc_diet_co.png"
+    },
+    {
+        "id": "nhom_lan_huu_co",
+        "title": "Nhóm lân hưu cơ",
+        "img_src": "nhom_lan_huu_co.png"
+    },
+    {
+        "id": "dien_thoai",
+        "title": "Điện thoại",
+        "img_src": "dien_thoai.png"
+    },
+    {
+        "id": "bau_troi",
+        "title": "Bầu trời",
+        "img_src": "bau_troi.png"
+    },
+    {
+        "id": "ngoi_sao",
+        "title": "Ngôi sao",
+        "img_src": "ngoi_sao.png"
+    }
+]
