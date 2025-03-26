@@ -14,9 +14,11 @@
         android:visibility="gone"/>
 
     <RelativeLayout
+        android:id="@+id/buttons_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:visibility="visible">
 
         <HorizontalScrollView
             android:id="@+id/scroll_view"

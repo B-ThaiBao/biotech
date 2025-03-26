@@ -89,6 +89,19 @@ public class MainFragment extends Fragment {
                 recyclerView.setVisibility(ViewGroup.GONE);
             }
         });
+
+        imageView.setOnClickListener(v -> {
+            View buttonsLayout = view.findViewById(R.id.buttons_layout);
+            if (buttonsLayout.getVisibility() == View.VISIBLE) {
+                FooterTitle.popBack();
+                FooterTitle.pushBack(getString(R.string.change_pos));
+                buttonsLayout.setVisibility(View.GONE);
+            } else {
+                FooterTitle.popBack();
+                FooterTitle.pushBack(getString(R.string.main_screen));
+                buttonsLayout.setVisibility(View.VISIBLE);
+            }
+        });
         return view;
     }
 
