@@ -2,6 +2,7 @@ package com.hcmut.assignment.biotech;
 
 import android.os.Bundle;
 
+import androidx.activity.ComponentActivity;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -23,10 +24,14 @@ public class DisplayView extends AppCompatActivity {
 
         FooterTitle.value = findViewById(R.id.footer_title);
         showHome();
-        findViewById(R.id.go_back_button).setOnClickListener(v -> {
-            FooterTitle.popBack();
-            getOnBackPressedDispatcher().onBackPressed();
-        });
+        findViewById(R.id.go_back_button).setOnClickListener(v -> onBackPressed());
+    }
+
+    @Override
+    @Deprecated
+    public void onBackPressed() {
+        super.onBackPressed();
+        FooterTitle.popBack();
     }
 
     private void changeFragment(Fragment fragment, String title) {
@@ -34,6 +39,6 @@ public class DisplayView extends AppCompatActivity {
         FooterTitle.pushBack(title);
     }
     public void showHome() {
-        changeFragment(new HomeFragment(), "CHỌN CÁCH HIỂN THỊ");
+        changeFragment(new HomeFragment(),  getString(R.string.display_opt));
     }
 }

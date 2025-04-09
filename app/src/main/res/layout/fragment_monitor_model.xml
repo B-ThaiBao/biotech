@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MonitorModelFragment">
+
+    <com.google.ar.sceneform.SceneView
+        android:id="@+id/monitor_scene_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_grey"/>
+
+    <com.hcmut.assignment.joystick.JoystickView
+        android:id="@+id/joystick_view"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_alignParentBottom="true"/>
+
+    <com.hcmut.assignment.scalejoystick.ScaleJoystickView
+        android:id="@+id/scale_joystick_view"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

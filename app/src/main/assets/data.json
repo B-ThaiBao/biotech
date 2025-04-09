@@ -5,6 +5,11 @@
         "img_src": "thuoc_tru_sau.png"
     },
     {
+        "id": "con_buom",
+        "title": "Con bướm",
+        "img_src": "con_buom.glb"
+    },
+    {
         "id": "thuoc_diet_co",
         "title": "Thuốc diệt cỏ",
         "img_src": "thuoc_diet_co.png"
@@ -13,6 +18,11 @@
         "id": "nhom_lan_huu_co",
         "title": "Nhóm lân hưu cơ",
         "img_src": "nhom_lan_huu_co.png"
+    },
+    {
+        "id": "con_ho",
+        "title": "Con hổ",
+        "img_src": "con_ho.glb"
     },
     {
         "id": "dien_thoai",
@@ -28,5 +38,10 @@
         "id": "ngoi_sao",
         "title": "Ngôi sao",
         "img_src": "ngoi_sao.png"
+    },
+    {
+        "id": "con_rong",
+        "title": "Con rồng",
+        "img_src": "con_rong.glb"
     }
 ]

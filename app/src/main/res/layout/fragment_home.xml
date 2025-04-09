@@ -7,8 +7,8 @@
     tools:context=".HomeFragment">
 
     <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="600dp"
+        android:layout_width="250dp"
+        android:layout_height="550dp"
         android:weightSum="11"
         android:layout_gravity="center"
         android:orientation="vertical">

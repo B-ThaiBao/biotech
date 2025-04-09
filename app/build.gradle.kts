@@ -57,4 +57,7 @@ dependencies {
     // https://developer.android.com/jetpack/androidx/releases/recyclerview
     val recyclerViewVersion = "1.2.1"
     implementation("androidx.recyclerview:recyclerview:${recyclerViewVersion}")
+
+    val sceneformVersion = "1.23.0"
+    implementation("com.gorisse.thomas.sceneform:sceneform:${sceneformVersion}")
 }

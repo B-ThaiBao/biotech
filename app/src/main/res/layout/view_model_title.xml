@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_textview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textAlignment="center"
+    android:text="Tiger"
+    android:textStyle="bold"
+    android:textSize="50sp"
+    android:textColor="@color/light_blue"
+    android:background="@drawable/rounded_title"/>

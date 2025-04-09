@@ -6,4 +6,10 @@
     <string name="main_screen">MÀN HÌNH CHÍNH</string>
     <string name="end_practice">KẾT THÚC</string>
     <string name="change_pos">CHỈNH VỊ TRÍ</string>
+    <string name="ar">AR</string>
+    <string name="opt_ar">Chế độ</string>
+    <string name="change_post">Tùy chỉnh</string>
+    <string name="fast_change_pos">Chỉnh nhanh</string>
+    <string name="display_opt">CHỌN CÁCH TÌM</string>
+    <string name="reality">THỰC TẾ ẢO</string>
 </resources>

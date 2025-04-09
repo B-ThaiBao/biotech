@@ -9,15 +9,18 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.ar.sceneform.Node;
+
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ButtonAdapter extends RecyclerView.Adapter<ButtonAdapter.ViewHolder> {
     private Context context;
-    private List<ImageData> dataList;
     private OnItemClickListener listener;
 
     public interface OnItemClickListener {
-        void onItemClick(String imgSrc);
+        void onItemClick(int position, String fileName);
     }
     public static class ViewHolder extends RecyclerView.ViewHolder {
         Button button;
@@ -28,9 +31,8 @@ public class ButtonAdapter extends RecyclerView.Adapter<ButtonAdapter.ViewHolder
         }
     }
 
-    public ButtonAdapter(Context context, List<ImageData> dataList, OnItemClickListener listener) {
+    public ButtonAdapter(Context context, OnItemClickListener listener) {
         this.context = context;
-        this.dataList = dataList;
         this.listener = listener;
     }
 
@@ -43,15 +45,15 @@ public class ButtonAdapter extends RecyclerView.Adapter<ButtonAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull ButtonAdapter.ViewHolder holder, int position) {
-        ImageData data = dataList.get(position);
+        ImageData data = Database.dataList.get(position);
         holder.button.setText(data.title);
         holder.button.setId(View.generateViewId()); // Tạo ID duy nhất
 
-        holder.button.setOnClickListener(v -> listener.onItemClick(data.img_src));
+        holder.button.setOnClickListener(v -> listener.onItemClick(position, data.img_src));
     }
 
     @Override
     public int getItemCount() {
-        return dataList.size();
+        return Database.dataList.size();
     }
 }
