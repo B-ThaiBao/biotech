@@ -35,7 +35,7 @@ public class DisplayView extends AppCompatActivity {
     }
 
     private void changeFragment(Fragment fragment, String title) {
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, fragment).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, fragment).commit();
         FooterTitle.pushBack(title);
     }
     public void showHome() {

@@ -75,7 +75,7 @@ public class MainFragment extends Fragment {
 
             // To fragment_practice
             PracticeFragment practiceFragment = PracticeFragment.newInstance();
-            getParentFragmentManager().beginTransaction().replace(R.id.fragment_container, practiceFragment).addToBackStack(null).commit();
+            getParentFragmentManager().beginTransaction().add(R.id.fragment_container, practiceFragment).addToBackStack(null).commit();
         });
 
         RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
@@ -115,7 +115,7 @@ public class MainFragment extends Fragment {
             } else {
                 FooterTitle.pushBack(getString(R.string.reality));
                 ArCameraFragment arCameraFragment = ArCameraFragment.newInstance(cur_position);
-                getParentFragmentManager().beginTransaction().replace(R.id.fragment_container, arCameraFragment).addToBackStack(null).commit();
+                getParentFragmentManager().beginTransaction().add(R.id.fragment_container, arCameraFragment).addToBackStack(null).commit();
             }
         });
         view.findViewById(R.id.circle_ar).setOnClickListener(v -> {
@@ -126,7 +126,7 @@ public class MainFragment extends Fragment {
             } else {
                 FooterTitle.pushBack(getString(R.string.reality));
                 ArCameraFragment arCameraFragment = ArCameraFragment.newInstance(cur_position);
-                getParentFragmentManager().beginTransaction().replace(R.id.fragment_container, arCameraFragment).addToBackStack(null).commit();
+                getParentFragmentManager().beginTransaction().add(R.id.fragment_container, arCameraFragment).addToBackStack(null).commit();
             }
         });
 
@@ -138,7 +138,7 @@ public class MainFragment extends Fragment {
             } else {
                 FooterTitle.pushBack(getString(R.string.change_pos));
                 MonitorModelFragment monitorModelFragment = MonitorModelFragment.newInstance(cur_position);
-                getParentFragmentManager().beginTransaction().replace(R.id.fragment_container, monitorModelFragment).addToBackStack(null).commit();
+                getParentFragmentManager().beginTransaction().add(R.id.fragment_container, monitorModelFragment).addToBackStack(null).commit();
             }
         });
         view.findViewById(R.id.circle_change_pos_button).setOnClickListener(v -> {
@@ -149,7 +149,7 @@ public class MainFragment extends Fragment {
             } else {
                 FooterTitle.pushBack(getString(R.string.change_pos));
                 MonitorModelFragment monitorModelFragment = MonitorModelFragment.newInstance(cur_position);
-                getParentFragmentManager().beginTransaction().replace(R.id.fragment_container, monitorModelFragment).addToBackStack(null).commit();
+                getParentFragmentManager().beginTransaction().add(R.id.fragment_container, monitorModelFragment).addToBackStack(null).commit();
             }
         });
 
@@ -161,7 +161,7 @@ public class MainFragment extends Fragment {
             } else {
                 FooterTitle.pushBack(getString(R.string.change_pos));
                 MonitorModelFragment monitorModelFragment = MonitorModelFragment.newInstance(cur_position);
-                getParentFragmentManager().beginTransaction().replace(R.id.fragment_container, monitorModelFragment).addToBackStack(null).commit();
+                getParentFragmentManager().beginTransaction().add(R.id.fragment_container, monitorModelFragment).addToBackStack(null).commit();
             }
         });
         view.findViewById(R.id.circle_fast_change_pos_button).setOnClickListener(v -> {
@@ -172,7 +172,7 @@ public class MainFragment extends Fragment {
             } else {
                 FooterTitle.pushBack(getString(R.string.change_pos));
                 MonitorModelFragment monitorModelFragment = MonitorModelFragment.newInstance(cur_position);
-                getParentFragmentManager().beginTransaction().replace(R.id.fragment_container, monitorModelFragment).addToBackStack(null).commit();
+                getParentFragmentManager().beginTransaction().add(R.id.fragment_container, monitorModelFragment).addToBackStack(null).commit();
             }
         });
 

@@ -34,13 +34,13 @@ public class HomeFragment extends Fragment {
         view.findViewById(R.id.find_space_layout).setOnClickListener(v -> {
             FooterTitle.pushBack(getString(R.string.main_screen));
             MainFragment mainFragment = MainFragment.newInstance();
-            getParentFragmentManager().beginTransaction().replace(R.id.fragment_container, mainFragment).addToBackStack(null).commit();
+            getParentFragmentManager().beginTransaction().add(R.id.fragment_container, mainFragment).addToBackStack(null).commit();
         });
 
         view.findViewById(R.id.find_img_layout).setOnClickListener(v -> {
             FooterTitle.pushBack(getString(R.string.main_screen));
             MainFragment mainFragment = MainFragment.newInstance();
-            getParentFragmentManager().beginTransaction().replace(R.id.fragment_container, mainFragment).addToBackStack(null).commit();
+            getParentFragmentManager().beginTransaction().add(R.id.fragment_container, mainFragment).addToBackStack(null).commit();
         });
         return view;
     }
