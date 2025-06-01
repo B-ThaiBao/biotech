@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "509288385000",
+    "project_id": "biotech-firebase",
+    "storage_bucket": "biotech-firebase.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509288385000:android:7235621dd4f3f953b6bc5d",
+        "android_client_info": {
+          "package_name": "com.hcmut.assignment.biotech"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkJYY14UpIaNdjR95bRqFuEM28W5yN5dU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

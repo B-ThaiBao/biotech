@@ -82,19 +82,4 @@ public class ArCameraFragment extends Fragment {
 
         return view;
     }
-
-//    @Override
-//    public void onTapPlane(HitResult hitResult, Plane plane, MotionEvent motionEvent) {
-//        Toast.makeText(requireContext(), "Hit the plane", Toast.LENGTH_SHORT).show();
-//        // Create the Anchor.
-//        Anchor anchor = hitResult.createAnchor();
-//        AnchorNode anchorNode = new AnchorNode(anchor);
-//        anchorNode.setParent(arFragment.getArSceneView().getScene());
-//
-//        // Create the transformable model and add it to the anchor.
-//        TransformableNode model = new TransformableNode(arFragment.getTransformationSystem());
-//        model.setParent(anchorNode);
-//        model.setRenderable(Database.modelNodes.get(cur_position).getRenderable()).animate(true).start();
-//        model.select();
-//    }
 }
