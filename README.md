@@ -51,12 +51,12 @@ Press Run (Shift + F10)
 ```
 
 ## 🛠️ Tech Stack
-**Language:** Java
-**IDE:** Android Studio
-**Firebase Authentication:** For secure user login
-**AR:** ARCore (via Sceneform or ARCore SDK)
-**3D Rendering:** Sceneform or OpenGL-based model viewer
-**Joystick Control:** Custom UI using Android View
+- **Language:** Java
+- **IDE:** Android Studio
+- **Firebase Authentication:** For secure user login
+- **AR:** ARCore (via Sceneform and ARCore SDK)
+- **3D Rendering:** Sceneform
+- **Joystick Control:** Custom UI using Android View
 
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
